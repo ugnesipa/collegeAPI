@@ -1,0 +1,60 @@
+/* Adds margin to the bottom of form groups */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Padding on top for elements with the class 'pdefault' */
+.pdefault {
+    padding-top: 90px;
+}
+
+/* Margin on top for elements with the class 'mdefault' */
+.mdefault {
+    margin-top: 90px;
+}
+
+/* Styling for form labels, including text color, font size, and margin at the bottom */
+.form-labels {
+    @apply text-white text-sm font-medium mb-3;
+}
+
+/* Adds padding to the top and bottom for elements with the class 'create-padding' */
+.create-padding {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Container styling with maximum width, padding, and margin */
+.container {
+    @apply mx-auto max-w-6xl px-4 py-6 sm:px-6 lg:px-8;
+}
+
+/* Styling for a card-like container with rounded corners, padding, and background opacity */
+.my-card {
+    @apply create-padding px-5 rounded-md my-3 bg-white bg-opacity-10;
+}
+
+/* Styling for error messages with red text color */
+.errorStyle {
+    @apply text-red-700;
+}
+
+/* Styling for the body, including a background image, size, position, and attachment */
+body {
+    background-image: url('../images/drew-beamer-kUHfMW8awpE-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Pseudo-element to create an overlay on the body for better visibility */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.25); /* Adjust the alpha value for darkness */
+    z-index: -1;
+}
